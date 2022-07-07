@@ -9,7 +9,8 @@ const CounterApp = ({ value = 0 }) => {
   }
 
   const substractValue = () => {
-    setCounter( counter - 1 )
+    if (counter > 0) {
+    setCounter( counter - 1 )}
   }
 
   const resetValue = () => {
@@ -31,4 +32,4 @@ const CounterApp = ({ value = 0 }) => {
   )
 }
 
-export default CounterApp
+export default CounterApp;

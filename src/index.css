@@ -15,3 +15,8 @@ code {
 * {
   padding: 2rem;
 }
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

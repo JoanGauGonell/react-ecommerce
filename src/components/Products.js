@@ -1,12 +1,11 @@
 import products from '../products';
 import CounterApp from './CounterApp';
 import ProductCard from './ProductCard';
-import  ShoppingCard from './shoppingButton';
 import './productCard.css'
+import onAdd from '../App'
+import ShoppingButton from './ShoppingButton';
 
-const Products = () => {
-
-  
+const Products = ( {cartItems, setCartItems}) => {
 
   return (
     <>
@@ -22,7 +21,7 @@ const Products = () => {
           <div>{product.price}€</div>
           <img className='product__img' src={product.img} alt={product.title} />
         <CounterApp className="counter" />
-        <ShoppingCard />
+        <ShoppingButton cartItems={cartItems} setCartItems={setCartItems} product={product}/>
         </ProductCard>
         ))
         }

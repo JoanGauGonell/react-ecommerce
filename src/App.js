@@ -8,21 +8,14 @@ import { useState } from 'react';
 
 function App(props) {
   const [cartItems, setCartItems]= useState([]);
-  const onAdd = (products) =>{
-    const exist = cartItems.find(x => x.id === products.id);
-    if(exist){
-      setCartItems(cartItems.map( x => x.id === products.id ? {...exist, qty: exist.qty+1}:x))
-    } else {
-      setCartItems([...cartItems, {...products, qty:1}])
-    }
-  }
+
   return (
       // <Article {...props}/>
       <>
     <Header  />
     <div className="App-style">
-      <Products onAdd={onAdd}  />
-      <Basket onAdd={onAdd}>cartItems={cartItems}</Basket>
+      <Products cartItems={cartItems} setCartItems={setCartItems}/>
+      <Basket > cartItems={cartItems}</Basket>
     </div>
     </>
  

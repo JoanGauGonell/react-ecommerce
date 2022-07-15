@@ -1,0 +1,45 @@
+[
+    {
+      "id": 100,
+      "title": "Nike Runner 2000",
+      "price": 88,
+      "img": "img_1",
+      "url": "./img/img_2.jpeg"
+    },
+    {
+      "id": 101,
+      "title": "Puma 80's",
+      "price": 109,
+      "img": "img_2",
+      "url": "./img/img_3.jpeg"
+    },
+    {
+     "id": 102,
+     "title": "Nike Rev Lite",
+     "price": 66,
+     "img": "img_3",
+     "url": "./img/img_4.jpg"
+    },
+    {
+      "id":103,
+      "title": "Nike Air",
+      "price": 129,
+      "img": "img_4",
+      "url": "./img/img_5.jpg"
+    },
+    {
+      "id": 104,
+      "title": "Adidas Run Kit",
+      "price": 199,
+      "img": "img_5",
+      "url": "./img/img_6.jpg"
+    },
+    {
+      "id": 105,
+      "title": "Adidas Flyer",
+      "price": 99,
+      "img": "img_6",
+      "url": "./img/img_1.jpeg"
+    }
+  ]
+  

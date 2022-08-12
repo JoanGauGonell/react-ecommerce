@@ -1,0 +1,15 @@
+.form{
+    background-color: rgb(199, 197, 197);
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px black solid;
+}   
+h3{
+    text-align: center;
+
+}
+table{
+    margin-left: 50%;
+}

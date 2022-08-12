@@ -5,11 +5,10 @@ import CounterValue from "../CounterValue/CounterValue";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import LoginButton from "../LoginButton/LoginButton";
 import Login from "../Login/Login";
-import "./CartModal.css";
-import loged from "../Login/Login";
-import Checkout from "../Checkout/Checkout"
+import "../CartModal/CartModal.css"
+// import { AiTwotoneHeart } from "react-icons/fa";
 
-function CartModal({ myCart, removeProduct, setItems }) {
+function WishModal({ myCart, removeProduct, setItems }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -18,9 +17,8 @@ function CartModal({ myCart, removeProduct, setItems }) {
     <>
       <div className="buttonsDiv">
         <Button variant="primary" onClick={handleShow}>
-          Shopping Cart
+        {/* < AiTwotoneHeart /> */}
         </Button>
-        <LoginButton />
       </div>
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
@@ -39,11 +37,9 @@ function CartModal({ myCart, removeProduct, setItems }) {
             Close
           </Button>
           {logged === "true" ? (
-            <Link to="/Checkout">
             <Button variant="primary" onClick={handleClose}>
               Pay
             </Button>
-            </Link>
           ) : (
             <Link to="/Login">
               <Button variant="primary" onClick={handleClose}>
@@ -57,4 +53,4 @@ function CartModal({ myCart, removeProduct, setItems }) {
   );
 }
 
-export default CartModal;
+export default WishModal;

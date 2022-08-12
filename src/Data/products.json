@@ -1,45 +1,45 @@
 [
     {
       "id": 100,
-      "title": "Nike Runner 2000",
-      "price": 88,
+      "title": "Gibson 67, deluxe edition",
+      "price": 1288,
       "img": "img_1",
-      "url": "./img/img_2.jpeg"
+      "url": "./img/img_2.png"
     },
     {
       "id": 101,
-      "title": "Puma 80's",
-      "price": 109,
+      "title": "Schecter hellraiser C7",
+      "price": 1099,
       "img": "img_2",
-      "url": "./img/img_3.jpeg"
+      "url": "./img/img_3.jpg"
     },
     {
      "id": 102,
-     "title": "Nike Rev Lite",
-     "price": 66,
+     "title": "LTD Flying V",
+     "price": 966,
      "img": "img_3",
-     "url": "./img/img_4.jpg"
+     "url": "./img/img_4.png"
     },
     {
       "id":103,
-      "title": "Nike Air",
-      "price": 129,
+      "title": "Ibanez Gio 4ex1",
+      "price": 299,
       "img": "img_4",
       "url": "./img/img_5.jpg"
     },
     {
       "id": 104,
-      "title": "Adidas Run Kit",
-      "price": 199,
+      "title": "Ltd fretless edition",
+      "price": 1199,
       "img": "img_5",
       "url": "./img/img_6.jpg"
     },
     {
       "id": 105,
-      "title": "Adidas Flyer",
-      "price": 99,
+      "title": "Gibson SG 1977",
+      "price": 1399,
       "img": "img_6",
-      "url": "./img/img_1.jpeg"
+      "url": "./img/img_1.png"
     }
   ]
   

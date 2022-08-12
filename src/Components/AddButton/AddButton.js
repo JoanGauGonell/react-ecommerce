@@ -7,6 +7,7 @@ function AddButton({ productData, addProduct }) {
     addProduct(productData);
   };
   return (
+    
     <button className="btn btn-primary" onClick={AddItemToLocalStorage}>
       ADD TO CART
     </button>

@@ -3,11 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Header/Header";
 import Body from "../Body/Body";
 import Footer from "../Footer/Footer";
-
+import { BrowserRouter } from "react-router-dom";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import { useState, useEffect } from "react";
 
 function App() {
-
+  const navigate = useNavigate();
   const [myCart, setItems] = useState(
     JSON.parse(localStorage.getItem("myCart")) || []
   );
@@ -31,10 +32,9 @@ function App() {
 
   return (
     <>
+    
       <Header myCart={myCart} removeProduct={removeProduct} setItems={setItems}/>
-      <Body addProduct={addProduct} />
-      <Footer />
-    </>
+      <Body addProduct={addProduct} />    </>
   );
 }
 

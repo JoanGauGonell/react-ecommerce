@@ -5,7 +5,7 @@ import Main from  "../Main/Main";
 
 function Body({ addProduct }) {
   return (
-    <div className="d-flex bd-highlight">
+    <div className="d-flex bd-highlight body">
       <div className="p-2 w-100 bd-highlight ">
         <Main addProduct={addProduct} />
       </div>

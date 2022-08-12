@@ -1,7 +1,7 @@
 
 import React from "react";
 import AddButton from "../AddButton/AddButton";
-
+import "./ProductCard.css";
 export default function ProductCard({ product, addProduct }) {
   return (
     //  aqui imprimos los elementos json en el body

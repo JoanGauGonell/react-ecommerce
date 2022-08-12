@@ -1,19 +1,36 @@
-import Link from "../Link/Link";
-
+import Links from "../Link/Links";
+import "./Nav.css"
+import { Link, Outlet, useNavigate } from "react-router-dom";
 const Nav = () => {
-  const links = [
-    { title: "About Us", url: "#" },
-    { title: "Shops", url: "#" },
-    { title: "Partnership", url: "#" },
-    { title: "Contact", url: "#" },
-  ];
   return (
     <nav>
-      {links.map((link) => (
-        <Link link={link} key={link.title} />
-      ))}
+      <ul className="navbar__ul">
+              <li>
+                <Link className="navbar__li" to={"/AboutUs"}>
+                  ABOUT US
+                </Link>
+              </li>
+              <li>
+                <Link className="navbar__li" to={"/shops"}>
+                  SHOP
+                </Link>
+              </li>
+              <li>
+                <Link className="navbar__li" to={"/contacts"}>
+                  CONTACT
+                </Link>
+              </li>
+              <li>
+                <Link className="navbar__li" to={"/Partnership"}>
+                  PARTNERSHIP
+                </Link>
+              </li>
+
+      </ul>
     </nav>
-  );
+      );
+
+      
 };
 
 export default Nav;
